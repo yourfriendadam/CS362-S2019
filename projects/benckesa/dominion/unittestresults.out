@@ -1,0 +1,2685 @@
+----------------- Testing Card: village ----------------
+Test 1: +1 card to hand, +2 actions in state
+
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Num Actions before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Ran playVillage
+
+Current cards in hand:
+actual: 5  expected: 5
+Results match.
+
+Current cards in deck:
+actual: 4  expected: 4
+Results match.
+
+Num Actions after play:
+actual: 3  expected: 3
+Results match.
+
+Cards in opponent's hand:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck:
+actual: 10  expected: 10
+Results match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: village ----------------
+Test 2: +1 card to hand, +2 actions in state when deck is -1
+
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: -1  expected: -1
+Results match.
+
+Num Actions before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Ran playVillage
+
+Current cards in hand:
+actual: 4  expected: 4
+Results match.
+
+Current cards in deck:
+actual: 0  expected: -1
+Results do NOT match.
+
+Num Actions after play:
+actual: 3  expected: 3
+Results match.
+
+Cards in opponent's hand:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck:
+actual: 10  expected: 10
+Results match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: village ----------------
+Test 3: +1 card to hand, +2 actions in state when deck is lowest possible int
+
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: -2147483648  expected: -2147483648
+Results match.
+
+Num Actions before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Ran playVillage
+
+Current cards in hand:
+actual: 4  expected: 4
+Results match.
+
+Current cards in deck:
+actual: 0  expected: -2147483648
+Results do NOT match.
+
+Num Actions after play:
+actual: 3  expected: 3
+Results match.
+
+Cards in opponent's hand:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck:
+actual: 10  expected: 10
+Results match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: council_room ----------------
+Test 1: +4 cards to hand, +1 buy in state, +1 card to other players' hand, -1 to their deck
+
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Num Buys before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Ran playCouncilRoom
+
+Current cards in hand:
+actual: 9  expected: 8
+Results do NOT match.
+
+Current cards in deck:
+actual: 0  expected: 1
+Results do NOT match.
+
+Num Buys before play:
+actual: 2  expected: 2
+Results match.
+
+Cards in opponent's hand:
+actual: 0  expected: 1
+Results do NOT match.
+
+Cards in opponent's deck:
+actual: 10  expected: 9
+Results do NOT match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: council_room ----------------
+Test 2: try other valid player value
+
+Cards in hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Num Buys before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran playCouncilRoom
+
+Current cards in hand:
+actual: 4  expected: 3
+Results do NOT match.
+
+Current cards in deck:
+actual: 5  expected: 6
+Results do NOT match.
+
+Num Buys before play:
+actual: 2  expected: 2
+Results match.
+
+Cards in opponent's hand:
+actual: 5  expected: 6
+Results do NOT match.
+
+Cards in opponent's deck:
+actual: 5  expected: 4
+Results do NOT match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: council_room ----------------
+Test 3: set currentPlayer to one beyond valid (== numPlayers)
+
+Cards in hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in deck to begin:
+actual: 0  expected: 0
+Results match.
+
+Num Buys before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran playCouncilRoom
+
+Current cards in hand:
+actual: -1  expected: 3
+Results do NOT match.
+
+Current cards in deck:
+actual: 0  expected: -4
+Results do NOT match.
+
+Num Buys before play:
+actual: 2  expected: 2
+Results match.
+
+Cards in opponent's hand:
+actual: 5  expected: 6
+Results do NOT match.
+
+Cards in opponent's deck:
+actual: 5  expected: 4
+Results do NOT match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: cutpurse ----------------
+Test 1: current player +2 coins, other player discards a copper
+
+Coins to begin:
+actual: 4  expected: 4
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Enum value of card: 1
+Enum value of card: 1
+Enum value of card: 4	Copper
+Enum value of card: 1
+Enum value of card: 1
+
+Running playCouncilRoom
+
+Coins after cutpurse:
+actual: 6  expected: 6
+Results match.
+
+Cards in opponent's hand:
+actual: 5  expected: 4
+Results do NOT match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: cutpurse ----------------
+Test 2: other player has full hand of coppers, discards only one copper
+
+Cards in opponent's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+
+Running playCouncilRoom
+
+Cards in opponent's hand:
+actual: 4  expected: 4
+Results match.
+
+----------------- Testing Card: cutpurse ----------------
+Test 3: other player has no coppers, only shows hand- no discarded copper
+
+Cards in opponent's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Enum value of card: 1
+Enum value of card: 1
+Enum value of card: 1
+Enum value of card: 1
+Enum value of card: 1
+
+Running playCouncilRoom
+
+Cards in opponent's hand:
+actual: 5  expected: 5
+Results match.
+
+----------------- Testing Card: smithy ----------------
+Test 1: check large valid handpos
+
+Handpos is: 4
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran playSmithy
+
+Current cards in hand:
+actual: -1  expected: 7
+Results do NOT match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+
+----------------- Testing Card: smithy ----------------
+Test 2: check large invalid handpos - handpos greater than handsize
+
+Handpos is: 10
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran playSmithy
+
+Current cards in hand:
+actual: 8  expected: 7
+Results do NOT match.
+
+
+----------------- Testing Card: smithy ----------------
+Test 3: negative value for handpos
+
+Handpos is: -1
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran playSmithy
+
+Current cards in hand:
+actual: 8  expected: 4
+Results do NOT match.
+
+----------------- Testing Card: adventurer ----------------
+Test 1: test function with choice 1 positive value instead of 0
+
+Deck order:
+Card 0		copper
+Card 1		copper
+Card 2		copper
+Card 3		copper
+Card 4		copper
+Card 5		estate
+Card 6		estate
+Card 7		estate
+Card 8		estate
+Card 9		estate
+
+Number of cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Cards in hand:
+Enum value of card: 7
+Enum value of card: 4	Copper
+Enum value of card: 1
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+
+Ran playAdventurer
+
+Current cards in hand:
+actual: 5  expected: 6
+Results do NOT match.
+
+Current cards in deck:
+actual: 10  expected: 3
+Results do NOT match.
+
+Cards in hand:
+Enum value of card: 7
+Enum value of card: 4	Copper
+Enum value of card: 1
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: adventurer ----------------
+Test 2: test function with choice 1 negative value instead of 0
+
+Deck order:
+Card 0		copper
+Card 1		copper
+Card 2		copper
+Card 3		copper
+Card 4		copper
+Card 5		estate
+Card 6		estate
+Card 7		estate
+Card 8		estate
+Card 9		estate
+
+Number of cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Cards in hand:
+Enum value of card: 7
+Enum value of card: 4	Copper
+Enum value of card: 1
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+
+Ran playAdventurer
+
+Current cards in hand:
+actual: 5  expected: 6
+Results do NOT match.
+
+Current cards in deck:
+actual: 10  expected: -2
+Results do NOT match.
+
+Cards in hand:
+Enum value of card: 7
+Enum value of card: 4	Copper
+Enum value of card: 1
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+----------------- Testing Card: adventurer ----------------
+Test 3: test function with choice 1 max int
+
+Deck order:
+Card 0		copper
+Card 1		copper
+Card 2		copper
+Card 3		copper
+Card 4		copper
+Card 5		estate
+Card 6		estate
+Card 7		estate
+Card 8		estate
+Card 9		estate
+
+Number of cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Cards in hand:
+Enum value of card: 7
+Enum value of card: 4	Copper
+Enum value of card: 1
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+
+Ran playAdventurer
+
+Current cards in hand:
+actual: 5  expected: 6
+Results do NOT match.
+
+Current cards in deck:
+actual: 10  expected: -7
+Results do NOT match.
+
+Cards in hand:
+Enum value of card: 7
+Enum value of card: 4	Copper
+Enum value of card: 1
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+----------------- Testing Card: adventurer ----------------
+Test 4: test function with choice 1 smallest possible int
+
+Deck order:
+Card 0		copper
+Card 1		copper
+Card 2		copper
+Card 3		copper
+Card 4		copper
+Card 5		estate
+Card 6		estate
+Card 7		estate
+Card 8		estate
+Card 9		estate
+
+Number of cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Cards in hand:
+Enum value of card: 7
+Enum value of card: 4	Copper
+Enum value of card: 1
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+
+Ran playAdventurer
+
+Current cards in hand:
+actual: 5  expected: 6
+Results do NOT match.
+
+Current cards in deck:
+actual: 10  expected: -12
+Results do NOT match.
+
+Cards in hand:
+Enum value of card: 7
+Enum value of card: 4	Copper
+Enum value of card: 1
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+----------------- Testing Card: great_hall ----------------
+Test 1: +1 card to hand, +1 actions in state
+
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Num Actions before play:
+actual: 1  expected: 1
+Results match.
+
+Ran great hall
+
+Current cards in hand:
+actual: 5  expected: 5
+Results match.
+
+Current cards in deck:
+actual: 4  expected: 4
+Results match.
+
+Num Actions after play:
+actual: 2  expected: 2
+Results match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: great_hall ----------------
+Test 2: +1 card to hand, +1 actions in state when deck is -1
+
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: -1  expected: -1
+Results match.
+
+Num Actions before play:
+actual: 1  expected: 1
+Results match.
+
+Ran great hall
+
+Current cards in hand:
+actual: 4  expected: 4
+Results match.
+
+Current cards in deck:
+actual: 0  expected: -1
+Results do NOT match.
+
+Num Actions after play:
+actual: 2  expected: 2
+Results match.
+
+----------------- Testing Card: great_hall ----------------
+Test 3: +1 card to hand, +1 actions in state when deck is lowest possible int
+
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: -2147483648  expected: -2147483648
+Results match.
+
+Num Actions before play:
+actual: 1  expected: 1
+Results match.
+
+Ran great hall
+
+Current cards in hand:
+actual: 4  expected: 4
+Results match.
+
+Current cards in deck:
+actual: 0  expected: -2147483648
+Results do NOT match.
+
+Num Actions after play:
+actual: 2  expected: 2
+Results match.
+
+----------------- Testing Card: sea_hag ----------------
+Test 1: discard top card from opponent's deck, replace with a curse, discard sea hag
+
+Opponent's deck size: 10
+Opponent's deck order:
+Card 0		copper
+Card 1		copper
+Card 2		copper
+Card 3		copper
+Card 4		copper
+Card 5		copper
+Card 6		copper
+Card 7		copper
+Card 8		copper
+Card 9		baron, enum 15
+
+Cards in player's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in player's deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran sea hag
+
+Current cards in hand:
+actual: 5  expected: 4
+Results do NOT match.
+
+Current cards in deck:
+actual: 5  expected: 5
+Results match.
+
+Opponent's deck size: 7
+Opponent's deck order:
+Card 0		copper
+Card 1		copper
+Card 2		copper
+Card 3		copper
+Card 4		copper
+Card 5		copper
+Card 6		copper
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: sea_hag ----------------
+Test 2: test sea hag with max opponent's deck size
+
+Opponent's deck size: 500
+Opponent's deck order:
+Card 498		baron, enum 15
+Cards 0 through 499 are all coppers.
+
+Cards in player's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in player's deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran sea hag
+
+Current cards in hand:
+actual: 5  expected: 4
+Results do NOT match.
+
+Current cards in deck:
+actual: 5  expected: 5
+Results match.
+
+Opponent's deck size: 497
+Opponent's deck order (excluding 400+ coppers):
+----------------- Testing Card: sea_hag ----------------
+Test 3: opponent's deck size 0
+
+Opponent's deck size: 0
+Opponent's deck order:
+
+Cards in player's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in player's deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran sea hag
+
+Current cards in hand:
+actual: 5  expected: 4
+Results do NOT match.
+
+Current cards in deck:
+actual: 5  expected: 5
+Results match.
+
+Opponent's deck size: -3
+Opponent's deck order:
+----------------- Testing Card: sea_hag ----------------
+Test 4: opponent's deck size -1
+
+Opponent's deck size: -1
+Opponent's deck order:
+
+Cards in player's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in player's deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran sea hag
+
+Current cards in hand:
+actual: 5  expected: 4
+Results do NOT match.
+
+Current cards in deck:
+actual: 5  expected: 5
+Results match.
+
+Opponent's deck size: -4
+Opponent's deck order:
+File 'unittest1.c'
+Lines executed:98.58% of 141
+Creating 'unittest1.c.gcov'
+
+File 'unittest2.c'
+Lines executed:100.00% of 122
+Creating 'unittest2.c.gcov'
+
+File 'unittest3.c'
+Lines executed:100.00% of 128
+Creating 'unittest3.c.gcov'
+
+File 'unittest4.c'
+Lines executed:97.70% of 87
+Creating 'unittest4.c.gcov'
+
+File 'cardtest1.c'
+Lines executed:100.00% of 61
+Creating 'cardtest1.c.gcov'
+
+File 'cardtest2.c'
+Lines executed:100.00% of 168
+Creating 'cardtest2.c.gcov'
+
+File 'cardtest3.c'
+Lines executed:100.00% of 83
+Creating 'cardtest3.c.gcov'
+
+File 'cardtest4.c'
+Lines executed:80.52% of 154
+Creating 'cardtest4.c.gcov'
+
+        -:    0:Source:unittest1.c
+        -:    0:Graph:unittest1.gcno
+        -:    0:Data:unittest1.gcda
+        -:    0:Runs:4
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include <string.h>
+        -:    4:#include <stdio.h>
+        -:    5:#include <assert.h>
+        -:    6:#include "rngs.h"
+        -:    7:
+        -:    8:#define TESTCARD "smithy"
+        -:    9:
+      176:   10:int asserttrue(int expVal, int verifyVal) {
+      176:   11:        printf("actual: %d  expected: %d\n", expVal, verifyVal);
+        -:   12:        
+      176:   13:        if(expVal == verifyVal) {
+      176:   14:            printf("Results match.\n\n");
+      176:   15:            return 0;
+        -:   16:        }
+        -:   17:        else {
+    #####:   18:            printf("Results do NOT match.\n\n");
+    #####:   19:            return 1;
+        -:   20:        }
+        -:   21:}
+        -:   22:
+        4:   23:int main() {
+        4:   24:    int seed = 1000;
+        4:   25:    int numPlayer = 2;
+        4:   26:    int currP = 0;
+        4:   27:    int otherP = 1;
+        4:   28:    int k[10] = {adventurer, council_room, feast, gardens, mine
+        -:   29:               , remodel, smithy, village, cutpurse, great_hall};
+        -:   30:    struct gameState state, testState;
+        -:   31:    
+        4:   32:    int discarded = 1;
+        4:   33:    int handpos = 0;
+        -:   34:    // state.deckCount[currP]=10;
+        -:   35:    // int maxHandCount = 5;
+        -:   36:	// MAX_HAND is 500 
+        -:   37:	
+        4:   38:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:   39:	printf("Test 1: +3 cards to hand, -3 cards to deck, discard card\n\n");
+        -:   40:	
+        -:   41:    // initialize game with hand and deck amounts reset from any previous tests
+        4:   42:	initializeGame(numPlayer, k, seed, &state); 
+        4:   43:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   44:    
+        -:   45:    // preconditions
+        4:   46:	printf("Cards in hand to begin:\n");
+        4:   47:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        4:   48:	printf("Cards in deck to begin:\n");
+        4:   49:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:   50:	
+        4:   51:	printf("Cards in opponent's hand to begin:\n");
+        4:   52:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        4:   53:	printf("Cards in opponent's deck to begin:\n");
+        4:   54:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:   55:	
+        4:   56:	int drawnCards = 3;
+        4:   57:    playSmithy(currP, &state, handpos); 
+        4:   58:    printf("Ran playSmithy\n\n");
+        -:   59:    
+        -:   60:    // post test	
+        4:   61:    printf("Current cards in hand:\n");
+        4:   62:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        4:   63:	printf("Current cards in deck:\n");
+        4:   64:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:   65:	
+        4:   66:    printf("Cards in opponent's hand:\n");
+        4:   67:    asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        4:   68:	printf("Cards in opponent's deck:\n");
+        4:   69:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:   70:	
+        4:   71:    printf("Victory card supplies:\n");
+        4:   72:    printf("Estates:\n");
+        4:   73:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        4:   74:    printf("Duchies:\n");
+        4:   75:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        4:   76:    printf("Provinces:\n");
+        4:   77:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:   78:	
+        4:   79:	printf("\n----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:   80:	printf("Test 2: +3 cards to hand when hand is at max size\n\n");	        
+        -:   81:
+        -:   82:    // initialize game with hand and deck amounts reset from any previous tests
+        4:   83:	initializeGame(numPlayer, k, seed, &state); 
+        4:   84:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   85:    
+        4:   86:	state.handCount[currP] = MAX_HAND;
+        4:   87:	testState.handCount[currP] = MAX_HAND;
+        4:   88:	state.deckCount[currP] = MAX_DECK;
+        4:   89:	testState.deckCount[currP] = MAX_DECK;
+        -:   90:	
+        -:   91:    // preconditions
+        4:   92:	printf("Cards in hand to begin:\n");
+        4:   93:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        4:   94:	printf("Cards in deck to begin:\n");
+        4:   95:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:   96:	
+        4:   97:	printf("Cards in opponent's hand to begin:\n");
+        4:   98:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        4:   99:	printf("Cards in opponent's deck to begin:\n");
+        4:  100:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:  101:	
+        4:  102:	drawnCards = 3;
+        4:  103:    playSmithy(currP, &state, handpos);
+        -:  104:    	
+        -:  105:    // post test	
+        4:  106:    printf("Current cards in hand:\n");
+        4:  107:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        4:  108:	printf("Current cards in deck:\n");
+        4:  109:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:  110:	
+        4:  111:    printf("Cards in opponent's hand:\n");
+        4:  112:    asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        4:  113:	printf("Cards in opponent's deck:\n");
+        4:  114:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:  115:	
+        4:  116:    printf("Victory card supplies:\n");
+        4:  117:    printf("Estates:\n");
+        4:  118:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        4:  119:    printf("Duchies:\n");
+        4:  120:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        4:  121:    printf("Provinces:\n");
+        4:  122:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:  123:
+        4:  124:	printf("\n----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:  125:	printf("Test 3: +3 cards from deck when deck is empty and played card pile is empty\n\n");	        
+        -:  126:
+        -:  127:    // initialize game with hand and deck amounts reset from any previous tests
+        4:  128:	initializeGame(numPlayer, k, seed, &state); 
+        4:  129:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  130:    
+        4:  131:	state.deckCount[currP] = 0;
+        4:  132:	testState.deckCount[currP] = 0;
+        -:  133:	
+        -:  134:    // preconditions
+        4:  135:	printf("Cards in hand to begin:\n");
+        4:  136:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        4:  137:	printf("Cards in deck to begin:\n");
+        4:  138:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  139:	
+        4:  140:	printf("Cards in opponent's hand to begin:\n");
+        4:  141:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        4:  142:	printf("Cards in opponent's deck to begin:\n");
+        4:  143:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:  144:	
+        -:  145:    // no cards in deck to draw
+        4:  146:	drawnCards = 0;
+        4:  147:    playSmithy(currP, &state, handpos);
+        -:  148:    	
+        -:  149:    // post test	
+        4:  150:    printf("Current cards in hand:\n");
+        4:  151:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        4:  152:	printf("Current cards in deck:\n");
+        4:  153:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:  154:	
+        4:  155:    printf("Cards in opponent's hand:\n");
+        4:  156:    asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        4:  157:	printf("Cards in opponent's deck:\n");
+        4:  158:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:  159:	
+        4:  160:    printf("Victory card supplies:\n");
+        4:  161:    printf("Estates:\n");
+        4:  162:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        4:  163:    printf("Duchies:\n");
+        4:  164:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        4:  165:    printf("Provinces:\n");
+        4:  166:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:  167:	
+        4:  168:	printf("\n----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:  169:	printf("Test 4: +3 cards from deck when deck has less than 3\n\n");
+        -:  170:	
+        -:  171:    // initialize game with hand and deck amounts reset from any previous tests
+        4:  172:	initializeGame(numPlayer, k, seed, &state); 
+        4:  173:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  174:    
+        4:  175:	state.deckCount[currP] = 1;
+        4:  176:	testState.deckCount[currP] = 1;
+        -:  177:	
+        -:  178:    // preconditions
+        4:  179:	printf("Cards in hand to begin:\n");
+        4:  180:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        4:  181:	printf("Cards in deck to begin:\n");
+        4:  182:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  183:	
+        4:  184:	printf("Cards in opponent's hand to begin:\n");
+        4:  185:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        4:  186:	printf("Cards in opponent's deck to begin:\n");
+        4:  187:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:  188:	
+        -:  189:	// no cards in deck to draw
+        4:  190:	drawnCards = 1;
+        4:  191:    playSmithy(currP, &state, handpos);
+        -:  192:    	
+        -:  193:    // post test	
+        4:  194:    printf("Current cards in hand:\n");
+        4:  195:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        4:  196:	printf("Current cards in deck:\n");
+        4:  197:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:  198:	
+        4:  199:    printf("Cards in opponent's hand:\n");
+        4:  200:    asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        4:  201:	printf("Cards in opponent's deck:\n");
+        4:  202:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:  203:	
+        4:  204:    printf("Victory card supplies:\n");
+        4:  205:    printf("Estates:\n");
+        4:  206:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        4:  207:    printf("Duchies:\n");
+        4:  208:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        4:  209:    printf("Provinces:\n");
+        4:  210:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:  211:    
+        4:  212:    return 0;
+        -:  213:}
+        -:    0:Source:unittest2.c
+        -:    0:Graph:unittest2.gcno
+        -:    0:Data:unittest2.gcda
+        -:    0:Runs:5
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include <string.h>
+        -:    4:#include <stdio.h>
+        -:    5:#include <assert.h>
+        -:    6:#include "rngs.h"
+        -:    7:
+        -:    8:#define TESTCARD "village"
+        -:    9:
+      195:   10:int asserttrue(int expVal, int verifyVal) {
+      195:   11:        printf("actual: %d  expected: %d\n", expVal, verifyVal);
+        -:   12:        
+      195:   13:        if(expVal == verifyVal) {
+      185:   14:            printf("Results match.\n\n");
+      185:   15:            return 0;
+        -:   16:        }
+        -:   17:        else {
+       10:   18:            printf("Results do NOT match.\n\n");
+       10:   19:            return 1;
+        -:   20:        }
+        -:   21:}
+        -:   22:
+        5:   23:int main() {
+        5:   24:    int seed = 1000;
+        5:   25:    int numPlayer = 2;
+        5:   26:    int currP = 0;
+        5:   27:    int otherP = 1;
+        5:   28:    int k[10] = {adventurer, council_room, feast, gardens, mine
+        -:   29:               , remodel, smithy, village, cutpurse, great_hall};
+        -:   30:    struct gameState state, testState;
+        -:   31:    
+        5:   32:    int discarded = 1;
+        5:   33:    int handpos = 0;    
+        -:   34:
+        5:   35:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        5:   36:	printf("Test 1: +1 card to hand, +2 actions in state\n\n");
+        -:   37:	
+        -:   38:    // initialize game with hand and deck amounts reset from any previous tests
+        5:   39:	initializeGame(numPlayer, k, seed, &state); 
+        5:   40:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   41:    
+        -:   42:    // preconditions
+        5:   43:	printf("Cards in hand to begin:\n");
+        5:   44:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        5:   45:	printf("Cards in deck to begin:\n");
+        5:   46:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:   47:	
+        5:   48:	printf("Num Actions before play:\n");
+        5:   49:	asserttrue(state.numActions, testState.numActions);
+        -:   50:	
+        5:   51:	printf("Cards in opponent's hand to begin:\n");
+        5:   52:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        5:   53:	printf("Cards in opponent's deck to begin:\n");
+        5:   54:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:   55:
+        5:   56:	int drawnCards = 1;
+        5:   57:	int numActionIncrease = 2;
+        5:   58:    playVillage(currP, &state, handpos); 
+        5:   59:    printf("Ran playVillage\n\n");
+        -:   60:
+        -:   61:    // post test	
+        5:   62:    printf("Current cards in hand:\n");
+        5:   63:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        5:   64:	printf("Current cards in deck:\n");
+        5:   65:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:   66:	
+        5:   67:	printf("Num Actions after play:\n"); 
+        5:   68:	asserttrue(state.numActions, testState.numActions + numActionIncrease);
+        -:   69:	
+        5:   70:    printf("Cards in opponent's hand:\n");
+        5:   71:    asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        5:   72:	printf("Cards in opponent's deck:\n");
+        5:   73:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:   74:	
+        5:   75:    printf("Victory card supplies:\n");
+        5:   76:    printf("Estates:\n");
+        5:   77:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        5:   78:    printf("Duchies:\n");
+        5:   79:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        5:   80:    printf("Provinces:\n");
+        5:   81:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:   82:
+        -:   83:
+        5:   84:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        5:   85:	printf("Test 2: +1 card to hand, +2 actions in state when deck is -1\n\n");
+        -:   86:	
+        -:   87:    // initialize game with hand and deck amounts reset from any previous tests
+        5:   88:	initializeGame(numPlayer, k, seed, &state); 
+        5:   89:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   90:    
+        5:   91:	state.deckCount[currP] = -1;
+        5:   92:	testState.deckCount[currP] = -1;
+        -:   93:	
+        -:   94:    // preconditions
+        5:   95:	printf("Cards in hand to begin:\n");
+        5:   96:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        5:   97:	printf("Cards in deck to begin:\n");
+        5:   98:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:   99:	
+        5:  100:	printf("Num Actions before play:\n");
+        5:  101:	asserttrue(state.numActions, testState.numActions);
+        -:  102:	
+        5:  103:	printf("Cards in opponent's hand to begin:\n");
+        5:  104:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        5:  105:	printf("Cards in opponent's deck to begin:\n");
+        5:  106:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:  107:
+        5:  108:	drawnCards = 0;
+        5:  109:    playVillage(currP, &state, handpos); 
+        5:  110:    printf("Ran playVillage\n\n");
+        -:  111:
+        -:  112:    // post test	
+        5:  113:    printf("Current cards in hand:\n");
+        5:  114:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        5:  115:	printf("Current cards in deck:\n");
+        5:  116:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:  117:	
+        5:  118:	printf("Num Actions after play:\n"); 
+        5:  119:	asserttrue(state.numActions, testState.numActions + numActionIncrease);
+        -:  120:	
+        5:  121:    printf("Cards in opponent's hand:\n");
+        5:  122:    asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        5:  123:	printf("Cards in opponent's deck:\n");
+        5:  124:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:  125:	
+        5:  126:    printf("Victory card supplies:\n");
+        5:  127:    printf("Estates:\n");
+        5:  128:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        5:  129:    printf("Duchies:\n");
+        5:  130:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        5:  131:    printf("Provinces:\n");
+        5:  132:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:  133:    
+        -:  134:
+        5:  135:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        5:  136:	printf("Test 3: +1 card to hand, +2 actions in state when deck is lowest possible int\n\n");
+        -:  137:	
+        -:  138:    // initialize game with hand and deck amounts reset from any previous tests
+        5:  139:	initializeGame(numPlayer, k, seed, &state); 
+        5:  140:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  141:    
+        5:  142:	state.deckCount[currP] = -2147483648;
+        5:  143:	testState.deckCount[currP] = -2147483648;
+        -:  144:	
+        -:  145:    // preconditions
+        5:  146:	printf("Cards in hand to begin:\n");
+        5:  147:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        5:  148:	printf("Cards in deck to begin:\n");
+        5:  149:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  150:	
+        5:  151:	printf("Num Actions before play:\n");
+        5:  152:	asserttrue(state.numActions, testState.numActions);
+        -:  153:	
+        5:  154:	printf("Cards in opponent's hand to begin:\n");
+        5:  155:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        5:  156:	printf("Cards in opponent's deck to begin:\n");
+        5:  157:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);	
+        -:  158:
+        5:  159:    playVillage(currP, &state, handpos); 
+        5:  160:    printf("Ran playVillage\n\n");
+        -:  161:
+        -:  162:    // post test	
+        5:  163:    printf("Current cards in hand:\n");
+        5:  164:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        5:  165:	printf("Current cards in deck:\n");
+        5:  166:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:  167:	
+        5:  168:	printf("Num Actions after play:\n"); 
+        5:  169:	asserttrue(state.numActions, testState.numActions + numActionIncrease);
+        -:  170:	
+        5:  171:    printf("Cards in opponent's hand:\n");
+        5:  172:    asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        5:  173:	printf("Cards in opponent's deck:\n");
+        5:  174:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:  175:	
+        5:  176:    printf("Victory card supplies:\n");
+        5:  177:    printf("Estates:\n");
+        5:  178:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        5:  179:    printf("Duchies:\n");
+        5:  180:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        5:  181:    printf("Provinces:\n");
+        5:  182:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:  183:
+        5:  184:	return 0;
+        -:  185:}
+        -:    0:Source:unittest3.c
+        -:    0:Graph:unittest3.gcno
+        -:    0:Data:unittest3.gcda
+        -:    0:Runs:5
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include <string.h>
+        -:    4:#include <stdio.h>
+        -:    5:#include <assert.h>
+        -:    6:#include "rngs.h"
+        -:    7:
+        -:    8:#define TESTCARD "council_room"
+        -:    9:
+      195:   10:int asserttrue(int expVal, int verifyVal) {
+      195:   11:        printf("actual: %d  expected: %d\n", expVal, verifyVal);
+        -:   12:        
+      195:   13:        if(expVal == verifyVal) {
+      135:   14:            printf("Results match.\n\n");
+      135:   15:            return 0;
+        -:   16:        }
+        -:   17:        else {
+       60:   18:            printf("Results do NOT match.\n\n");
+       60:   19:            return 1;
+        -:   20:        }
+        -:   21:}
+        -:   22:
+        5:   23:int main() {
+        5:   24:    int seed = 1000;
+        5:   25:    int numPlayer = 2;
+        5:   26:    int currP = 0;
+        5:   27:    int otherP = 1;
+        5:   28:    int k[10] = {adventurer, council_room, feast, gardens, mine
+        -:   29:               , remodel, smithy, village, cutpurse, great_hall};
+        -:   30:    struct gameState state, testState;
+        -:   31:    
+        5:   32:    int discarded = 1;
+        5:   33:    int handpos = 0;    
+        -:   34:
+        5:   35:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        5:   36:	printf("Test 1: +4 cards to hand, +1 buy in state, +1 card to other players' hand, -1 to their deck\n\n");
+        -:   37:	
+        -:   38:    // initialize game with hand and deck amounts reset from any previous tests
+        5:   39:	initializeGame(numPlayer, k, seed, &state); 
+        5:   40:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   41:    
+        -:   42:    // preconditions
+        5:   43:	printf("Cards in hand to begin:\n");
+        5:   44:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        5:   45:	printf("Cards in deck to begin:\n");
+        5:   46:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:   47:	
+        5:   48:	printf("Num Buys before play:\n");
+        5:   49:	asserttrue(state.numBuys, testState.numBuys);
+        -:   50:	
+        5:   51:	printf("Cards in opponent's hand to begin:\n");
+        5:   52:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        5:   53:	printf("Cards in opponent's deck to begin:\n");
+        5:   54:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:   55:
+        5:   56:	int drawnCards = 4;
+        5:   57:	int numBuyIncrease = 1;
+        5:   58:	int oppDrawnCards = 1;
+        5:   59:    playCouncilRoom(currP, &state, handpos); 
+        5:   60:    printf("Ran playCouncilRoom\n\n");
+        -:   61:
+        -:   62:    // post test	
+        5:   63:    printf("Current cards in hand:\n");
+        5:   64:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        5:   65:	printf("Current cards in deck:\n");
+        5:   66:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:   67:	
+        5:   68:	printf("Num Buys before play:\n");
+        5:   69:	asserttrue(state.numBuys, testState.numBuys + numBuyIncrease);
+        -:   70:	
+        5:   71:    printf("Cards in opponent's hand:\n");
+        5:   72:    asserttrue(state.handCount[otherP], testState.handCount[otherP] + oppDrawnCards);
+        5:   73:	printf("Cards in opponent's deck:\n");
+        5:   74:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP] - oppDrawnCards);
+        -:   75:
+        5:   76:    printf("Victory card supplies:\n");
+        5:   77:    printf("Estates:\n");
+        5:   78:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        5:   79:    printf("Duchies:\n");
+        5:   80:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        5:   81:    printf("Provinces:\n");
+        5:   82:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:   83:
+        -:   84:
+        5:   85:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        5:   86:	printf("Test 2: try other valid player value\n\n");
+        -:   87:
+        5:   88:	currP = 1;
+        5:   89:	otherP = 0;
+        -:   90:	
+        -:   91:    // initialize game with hand and deck amounts reset from any previous tests
+        5:   92:	initializeGame(numPlayer, k, seed, &state); 
+        -:   93:    
+        5:   94:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   95:    
+        -:   96:    // preconditions
+        5:   97:	printf("Cards in hand to begin:\n");
+        5:   98:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        5:   99:	printf("Cards in deck to begin:\n");
+        5:  100:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  101:	
+        5:  102:	printf("Num Buys before play:\n");
+        5:  103:	asserttrue(state.numBuys, testState.numBuys);
+        -:  104:	
+        5:  105:	printf("Cards in opponent's hand to begin:\n");
+        5:  106:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        5:  107:	printf("Cards in opponent's deck to begin:\n");
+        5:  108:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);	
+        -:  109:
+        5:  110:	drawnCards = 4;
+        5:  111:	numBuyIncrease = 1;
+        5:  112:	oppDrawnCards = 1;
+        5:  113:    playCouncilRoom(currP, &state, handpos); 
+        5:  114:    printf("Ran playCouncilRoom\n\n");
+        -:  115:
+        -:  116:    // post test	
+        5:  117:    printf("Current cards in hand:\n");
+        5:  118:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        5:  119:	printf("Current cards in deck:\n");
+        5:  120:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:  121:	
+        5:  122:	printf("Num Buys before play:\n");
+        5:  123:	asserttrue(state.numBuys, testState.numBuys + numBuyIncrease);
+        -:  124:	
+        5:  125:    printf("Cards in opponent's hand:\n");
+        5:  126:    asserttrue(state.handCount[otherP], testState.handCount[otherP] + oppDrawnCards);
+        5:  127:	printf("Cards in opponent's deck:\n");
+        5:  128:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP] - oppDrawnCards);
+        -:  129:	
+        5:  130:    printf("Victory card supplies:\n");
+        5:  131:    printf("Estates:\n");
+        5:  132:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        5:  133:    printf("Duchies:\n");
+        5:  134:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        5:  135:    printf("Provinces:\n");
+        5:  136:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:  137:
+        -:  138:	
+        5:  139:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        5:  140:	printf("Test 3: set currentPlayer to one beyond valid (== numPlayers)\n\n");
+        -:  141:	
+        5:  142:	currP = 2;
+        5:  143:	otherP = 0;
+        -:  144:	
+        -:  145:    // initialize game with hand and deck amounts reset from any previous tests
+        5:  146:	initializeGame(numPlayer, k, seed, &state); 
+        5:  147:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  148:    
+        -:  149:    // preconditions
+        5:  150:	printf("Cards in hand to begin:\n");
+        5:  151:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        5:  152:	printf("Cards in deck to begin:\n");
+        5:  153:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  154:	
+        5:  155:	printf("Num Buys before play:\n");
+        5:  156:	asserttrue(state.numBuys, testState.numBuys);
+        -:  157:	
+        5:  158:	printf("Cards in opponent's hand to begin:\n");
+        5:  159:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        5:  160:	printf("Cards in opponent's deck to begin:\n");
+        5:  161:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);	
+        -:  162:
+        5:  163:	drawnCards = 4;
+        5:  164:	numBuyIncrease = 1;
+        5:  165:	oppDrawnCards = 1;
+        5:  166:    playCouncilRoom(currP, &state, handpos); 
+        5:  167:    printf("Ran playCouncilRoom\n\n");
+        -:  168:
+        -:  169:    // post test	
+        5:  170:    printf("Current cards in hand:\n");
+        5:  171:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        5:  172:	printf("Current cards in deck:\n");
+        5:  173:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:  174:	
+        5:  175:	printf("Num Buys before play:\n");
+        5:  176:	asserttrue(state.numBuys, testState.numBuys + numBuyIncrease);
+        -:  177:	
+        5:  178:    printf("Cards in opponent's hand:\n");
+        5:  179:    asserttrue(state.handCount[otherP], testState.handCount[otherP] + oppDrawnCards);
+        5:  180:	printf("Cards in opponent's deck:\n");
+        5:  181:	asserttrue(state.deckCount[otherP], testState.deckCount[otherP] - oppDrawnCards);
+        -:  182:	
+        5:  183:    printf("Victory card supplies:\n");
+        5:  184:    printf("Estates:\n");
+        5:  185:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        5:  186:    printf("Duchies:\n");
+        5:  187:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        5:  188:    printf("Provinces:\n");
+        5:  189:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:  190:		
+        -:  191:	
+        -:  192:	// printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        -:  193:	// printf("Test 4: set currentPlayer to max int\n\n");
+        -:  194:	
+        -:  195:	// currP = 2147483647;
+        -:  196:	// otherP = 0;
+        -:  197:	
+        -:  198: //   // initialize game with hand and deck amounts reset from any previous tests
+        -:  199:	// initializeGame(numPlayer, k, seed, &state); 
+        -:  200: //   memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  201:    
+        -:  202: //   // preconditions
+        -:  203:	// printf("Cards in hand to begin:\n");
+        -:  204:	// asserttrue(state.handCount[currP], testState.handCount[currP]);
+        -:  205:	// printf("Cards in deck to begin:\n");
+        -:  206:	// asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  207:	
+        -:  208:	// printf("Num Buys before play:\n");
+        -:  209:	// asserttrue(state.numBuys, testState.numBuys);
+        -:  210:	
+        -:  211:	// printf("Cards in opponent's hand to begin:\n");
+        -:  212:	// asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        -:  213:	// printf("Cards in opponent's deck to begin:\n");
+        -:  214:	// asserttrue(state.deckCount[otherP], testState.deckCount[otherP]);
+        -:  215:
+        -:  216:	// drawnCards = 4;
+        -:  217:	// numBuyIncrease = 1;
+        -:  218:	// oppDrawnCards = 1;
+        -:  219: //   playCouncilRoom(currP, &state, handpos); 
+        -:  220: //   printf("Ran playCouncilRoom\n\n");
+        -:  221:
+        -:  222: //   // post test	
+        -:  223: //   printf("Current cards in hand:\n");
+        -:  224: //   asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        -:  225:	// printf("Current cards in deck:\n");
+        -:  226:	// asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:  227:	
+        -:  228:	// printf("Num Buys before play:\n");
+        -:  229:	// asserttrue(state.numBuys, testState.numBuys + numBuyIncrease);
+        -:  230:	
+        -:  231: //   printf("Cards in opponent's hand:\n");
+        -:  232: //   asserttrue(state.handCount[otherP], testState.handCount[otherP] + oppDrawnCards);
+        -:  233:	// printf("Cards in opponent's deck:\n");
+        -:  234:	// asserttrue(state.deckCount[otherP], testState.deckCount[otherP] - oppDrawnCards);
+        -:  235:	
+        -:  236: //   printf("Victory card supplies:\n");
+        -:  237: //   printf("Estates:\n");
+        -:  238: //   asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        -:  239: //   printf("Duchies:\n");
+        -:  240: //   asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        -:  241: //   printf("Provinces:\n");
+        -:  242: //   asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:  243:
+        5:  244:	return 0;
+        -:  245:}
+        -:    0:Source:unittest4.c
+        -:    0:Graph:unittest4.gcno
+        -:    0:Data:unittest4.gcda
+        -:    0:Runs:4
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include <string.h>
+        -:    4:#include <stdio.h>
+        -:    5:#include <assert.h>
+        -:    6:#include "rngs.h"
+        -:    7:
+        -:    8:#define TESTCARD "cutpurse"
+        -:    9:
+       44:   10:int asserttrue(int expVal, int verifyVal) {
+       44:   11:        printf("actual: %d  expected: %d\n", expVal, verifyVal);
+        -:   12:        
+       44:   13:        if(expVal == verifyVal) {
+       40:   14:            printf("Results match.\n\n");
+       40:   15:            return 0;
+        -:   16:        }
+        -:   17:        else {
+        4:   18:            printf("Results do NOT match.\n\n");
+        4:   19:            return 1;
+        -:   20:        }
+        -:   21:}
+        -:   22:
+        4:   23:int main() {
+        4:   24:    int seed = 1000;
+        4:   25:    int numPlayer = 2;
+        4:   26:    int currP = 0;
+        4:   27:    int otherP = 1;
+        4:   28:    int k[10] = {adventurer, council_room, feast, gardens, mine
+        -:   29:               , remodel, smithy, village, cutpurse, great_hall};
+        -:   30:    struct gameState state, testState;
+        -:   31:
+        4:   32:    int handpos = 0;    
+        4:   33:	int coinIncrease = 2;
+        4:   34:	int discardedCopper = 1;
+        -:   35:	int i;
+        -:   36:	int coppers[5];
+        -:   37:	int estates[5];
+        -:   38:
+        4:   39:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:   40:	printf("Test 1: current player +2 coins, other player discards a copper\n\n");
+        -:   41:	
+        -:   42:    // initialize game with hand and deck amounts reset from any previous tests
+        4:   43:	initializeGame(numPlayer, k, seed, &state); 
+        -:   44:
+        -:   45:	//set up other players hand to have 5 cards, all coppers
+       24:   46:	for(i=0; i < 5; i++) {
+       20:   47:		drawCard(otherP, &state);
+       20:   48:		estates[i] = estate;
+        -:   49:	}
+        -:   50:	
+        -:   51:	// set other players hand to 4 estates and 1 copper
+        4:   52:	memcpy(state.hand[otherP], estates, sizeof(int) * 5);
+        4:   53:	state.hand[otherP][2] = copper;
+        -:   54:	
+        4:   55:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   56:    
+        -:   57:    // preconditions
+        4:   58:	printf("Coins to begin:\n");
+        4:   59:	asserttrue(state.coins, testState.coins);
+        -:   60:	
+        4:   61:	printf("Cards in opponent's hand to begin:\n");
+        4:   62:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        -:   63:	
+        -:   64:	// print out cards from hand - note the coppers
+       24:   65:    for(i = 0; i < state.handCount[otherP]; i++) {
+       20:   66:    	printf("Enum value of card: %d", state.hand[otherP][i]);
+       20:   67:    	if(state.hand[otherP][i] == 4) {
+        4:   68:    		printf("	Copper\n");
+        -:   69:    	}
+        -:   70:    	else {
+       16:   71:    		printf("\n");
+        -:   72:    	}
+        -:   73:    }
+        -:   74:    
+        4:   75:	printf("\nRunning playCouncilRoom\n\n");	
+        4:   76:    playCutpurse(currP, &state, handpos); 
+        -:   77:
+        -:   78:    // post test	
+        4:   79:    printf("Coins after cutpurse:\n");
+        4:   80:    asserttrue(state.coins, testState.coins + coinIncrease);
+        -:   81:
+        4:   82:	printf("Cards in opponent's hand:\n");
+        4:   83:	asserttrue(state.handCount[otherP], testState.handCount[otherP] - discardedCopper);
+        -:   84:	
+        4:   85:    printf("Victory card supplies:\n");
+        4:   86:    printf("Estates:\n");
+        4:   87:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        4:   88:    printf("Duchies:\n");
+        4:   89:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        4:   90:    printf("Provinces:\n");
+        4:   91:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:   92:
+        -:   93:	
+        4:   94:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:   95:	printf("Test 2: other player has full hand of coppers, discards only one copper\n\n");
+        -:   96:	
+        -:   97:    // initialize game with hand and deck amounts reset from any previous tests
+        4:   98:	initializeGame(numPlayer, k, seed, &state); 
+        -:   99:
+        -:  100:	//set up other players hand to have 5 cards, all coppers
+       24:  101:	for(i=0; i < 5; i++) {
+       20:  102:		drawCard(otherP, &state);
+       20:  103:		coppers[i] = copper;
+        -:  104:	}
+        -:  105:	
+        -:  106:	// set other players hand to 5 coppers
+        4:  107:	memcpy(state.hand[otherP], coppers, sizeof(int) * 5);
+        -:  108:	
+        4:  109:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  110:    
+        -:  111:    // preconditions
+        4:  112:	printf("Cards in opponent's hand to begin:\n");
+        4:  113:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        -:  114:	
+        -:  115:	// print out cards from hand - note the coppers
+       24:  116:    for(i = 0; i < state.handCount[otherP]; i++) {
+       20:  117:    	printf("Enum value of card: %d", state.hand[otherP][i]);
+       20:  118:    	if(state.hand[otherP][i] == 4) {
+       20:  119:    		printf("	Copper\n");
+        -:  120:    	}
+        -:  121:    	else {
+    #####:  122:    		printf("\n");
+        -:  123:    	}
+        -:  124:    }
+        -:  125:    
+        4:  126:	printf("\nRunning playCouncilRoom\n\n");	
+        4:  127:    playCutpurse(currP, &state, handpos); 
+        -:  128:
+        -:  129:    // post test	
+        4:  130: 	printf("Cards in opponent's hand:\n");
+        4:  131: 	asserttrue(state.handCount[otherP], testState.handCount[otherP] - discardedCopper);
+        -:  132:
+        -:  133:
+        4:  134:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:  135:	printf("Test 3: other player has no coppers, only shows hand- no discarded copper\n\n");
+        -:  136:	
+        -:  137:    // initialize game with hand and deck amounts reset from any previous tests
+        4:  138:	initializeGame(numPlayer, k, seed, &state); 
+        -:  139:
+        -:  140:	//set up other players hand to have 5 cards, no coppers
+       24:  141:	for(i=0; i < 5; i++) {
+       20:  142:		drawCard(otherP, &state);
+       20:  143:		estates[i] = estate;
+        -:  144:	}
+        -:  145:	
+        -:  146:	// set other players hand to 5 estates, no coppers
+        4:  147:	memcpy(state.hand[otherP], estates, sizeof(int) * 5);
+        -:  148:	
+        4:  149:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  150:    
+        -:  151:    // preconditions
+        4:  152:	printf("Cards in opponent's hand to begin:\n");
+        4:  153:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        -:  154:	
+        -:  155:	// print out cards from hand - note the coppers
+       24:  156:    for(i = 0; i < state.handCount[otherP]; i++) {
+       20:  157:    	printf("Enum value of card: %d", state.hand[otherP][i]);
+       20:  158:    	if(state.hand[otherP][i] == 4) {
+    #####:  159:    		printf("	Copper\n");
+        -:  160:    	}
+        -:  161:    	else {
+       20:  162:    		printf("\n");
+        -:  163:    	}
+        -:  164:    }
+        -:  165:    
+        4:  166:	printf("\nRunning playCouncilRoom\n\n");	
+        4:  167:	discardedCopper = 0;
+        4:  168:    playCutpurse(currP, &state, handpos); 
+        -:  169:
+        -:  170:    // post test	
+        4:  171:	printf("Cards in opponent's hand:\n");
+        4:  172:	asserttrue(state.handCount[otherP], testState.handCount[otherP]);
+        -:  173:				
+        4:  174:	return 0;
+        -:  175:}
+        -:    0:Source:cardtest1.c
+        -:    0:Graph:cardtest1.gcno
+        -:    0:Data:cardtest1.gcda
+        -:    0:Runs:4
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include <string.h>
+        -:    4:#include <stdio.h>
+        -:    5:#include <assert.h>
+        -:    6:#include "rngs.h"
+        -:    7:
+        -:    8:#define TESTCARD "smithy"
+        -:    9:
+       36:   10:int asserttrue(int expVal, int verifyVal) {
+       36:   11:        printf("actual: %d  expected: %d\n", expVal, verifyVal);
+        -:   12:        
+       36:   13:        if(expVal == verifyVal) {
+       24:   14:            printf("Results match.\n\n");
+       24:   15:            return 0;
+        -:   16:        }
+        -:   17:        else {
+       12:   18:            printf("Results do NOT match.\n\n");
+       12:   19:            return 1;
+        -:   20:        }
+        -:   21:}
+        -:   22:
+        4:   23:int main() {
+        4:   24:    int seed = 1000;
+        4:   25:    int numPlayer = 2;
+        4:   26:    int currP = 0;
+        4:   27:    int k[10] = {adventurer, council_room, feast, gardens, mine
+        -:   28:               , remodel, smithy, village, cutpurse, great_hall};
+        -:   29:    struct gameState state, testState;
+        -:   30:    
+        4:   31:    int discarded = 1;
+        4:   32:    int handpos = 0;
+        -:   33:    // state.deckCount[currP]=10;
+        -:   34:    // int maxHandCount = 5;
+        -:   35:	// MAX_HAND is 500 
+        -:   36:	
+        4:   37:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:   38:	printf("Test 1: check large valid handpos\n\n");
+        -:   39:	
+        4:   40:	handpos = 4;
+        -:   41:	
+        -:   42:    // initialize game with hand and deck amounts reset from any previous tests
+        4:   43:	initializeGame(numPlayer, k, seed, &state); 
+        4:   44:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   45:    
+        -:   46:    // preconditions
+        4:   47:    printf("Handpos is: %d\n", handpos);
+        4:   48:	printf("Cards in hand to begin:\n");
+        4:   49:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        -:   50:	
+        4:   51:	int drawnCards = 3;
+        4:   52:    cardEffect(smithy, 0, 0, 0, &state, handpos, 0);
+        4:   53:    printf("Ran playSmithy\n\n");
+        -:   54:    
+        -:   55:    // post test	
+        4:   56:    printf("Current cards in hand:\n");
+        4:   57:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        -:   58:
+        4:   59:    printf("Victory card supplies:\n");
+        4:   60:    printf("Estates:\n");
+        4:   61:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        4:   62:    printf("Duchies:\n");
+        4:   63:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        4:   64:    printf("Provinces:\n");
+        4:   65:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:   66:	
+        4:   67:	printf("\n----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:   68:	printf("Test 2: check large invalid handpos - handpos greater than handsize\n\n");
+        -:   69:	
+        4:   70:	handpos = 10;
+        -:   71:
+        -:   72:    // initialize game with hand and deck amounts reset from any previous tests
+        4:   73:	initializeGame(numPlayer, k, seed, &state); 
+        4:   74:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   75:	
+        -:   76:    // preconditions
+        4:   77:    printf("Handpos is: %d\n", handpos);
+        4:   78:	printf("Cards in hand to begin:\n");
+        4:   79:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        -:   80:	
+        4:   81:	drawnCards = 3;
+        4:   82:    cardEffect(smithy, 0, 0, 0, &state, handpos, 0);
+        4:   83:    printf("Ran playSmithy\n\n");
+        -:   84:    	
+        -:   85:    // post test	
+        4:   86:    printf("Current cards in hand:\n");
+        4:   87:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        -:   88:
+        -:   89:
+        4:   90:	printf("\n----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:   91:	printf("Test 3: negative value for handpos\n\n");	        
+        -:   92:
+        -:   93:    // initialize game with hand and deck amounts reset from any previous tests
+        4:   94:	initializeGame(numPlayer, k, seed, &state); 
+        4:   95:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   96:    
+        4:   97:    handpos = -1;
+        -:   98:	
+        -:   99:    // preconditions
+        4:  100:    printf("Handpos is: %d\n", handpos);
+        4:  101:	printf("Cards in hand to begin:\n");
+        4:  102:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        -:  103:
+        -:  104:	
+        -:  105:    // no cards in deck to draw
+        4:  106:	drawnCards = 0;
+        4:  107:    cardEffect(smithy, 0, 0, 0, &state, handpos, 0);
+        4:  108:    printf("Ran playSmithy\n\n");
+        -:  109:    	
+        -:  110:    // post test	
+        4:  111:    printf("Current cards in hand:\n");
+        4:  112:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        -:  113:
+        -:  114:	
+        -:  115:// 	printf("\n----------------- Testing Card: %s ----------------\n", TESTCARD);
+        -:  116:// 	printf("Test 4: large negative handpos\n\n");
+        -:  117:	
+        -:  118:// 	handpos = -1000;
+        -:  119:	
+        -:  120://     // initialize game with hand and deck amounts reset from any previous tests
+        -:  121:// 	initializeGame(numPlayer, k, seed, &state); 
+        -:  122://     memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  123:	
+        -:  124://     // preconditions
+        -:  125://     printf("Handpos is: %d\n", handpos);
+        -:  126:// 	printf("Cards in hand to begin:\n");
+        -:  127:// 	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        -:  128:
+        -:  129://     // no cards in deck to draw
+        -:  130:// 	drawnCards = 1;
+        -:  131://     cardEffect(smithy, 0, 0, 0, &state, handpos, 0);
+        -:  132://     printf("Ran playSmithy\n\n");
+        -:  133:    	
+        -:  134://     // post test	
+        -:  135://     printf("Current cards in hand:\n");
+        -:  136://     asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        -:  137:    
+        4:  138:    return 0;
+        -:  139:}
+        -:    0:Source:cardtest2.c
+        -:    0:Graph:cardtest2.gcno
+        -:    0:Data:cardtest2.gcda
+        -:    0:Runs:2
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include <string.h>
+        -:    4:#include <stdio.h>
+        -:    5:#include <assert.h>
+        -:    6:#include "rngs.h"
+        -:    7:
+        -:    8:#define TESTCARD "adventurer"
+        -:    9:
+       38:   10:int asserttrue(int expVal, int verifyVal) {
+       38:   11:        printf("actual: %d  expected: %d\n", expVal, verifyVal);
+        -:   12:        
+       38:   13:        if(expVal == verifyVal) {
+       22:   14:            printf("Results match.\n\n");
+       22:   15:            return 0;
+        -:   16:        }
+        -:   17:        else {
+       16:   18:            printf("Results do NOT match.\n\n");
+       16:   19:            return 1;
+        -:   20:        }
+        -:   21:}
+        -:   22:
+        2:   23:int main() {
+        2:   24:    int seed = 1000;
+        2:   25:    int numPlayer = 2;
+        2:   26:    int currP = 0;
+        2:   27:    int k[10] = {adventurer, council_room, feast, gardens, mine
+        -:   28:               , remodel, smithy, village, cutpurse, great_hall};
+        -:   29:    struct gameState state, testState;
+        -:   30:    
+        -:   31:    int i;
+        2:   32:    int discarded = 1;
+        2:   33:    int handpos = 0;    
+        2:   34:	int treasureAdded = 2; //used for verification with testState
+        2:   35:	int deckCardsRemoved = 2; //used for verification with testState, begins at 2 for 2 drawntreasure
+        -:   36:
+        2:   37:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        2:   38:	printf("Test 1: test function with choice 1 positive value instead of 0\n\n");
+        -:   39:	
+        -:   40:    // initialize game with hand and deck amounts reset from any previous tests
+        2:   41:	initializeGame(numPlayer, k, seed, &state); 
+        -:   42:	
+        2:   43:	state.deckCount[currP] = 10;
+        -:   44:	
+        -:   45:	// set deck order to control draws
+        2:   46:	printf("Deck order:\n");
+       22:   47:	for(i = 0; i < 10; i++) {
+       20:   48:		if(i > 4) {
+        -:   49:			// top half of deck, first cards drawn
+       10:   50:			state.deck[currP][i] = estate;
+       10:   51:			printf("Card %d		estate\n", i);
+       10:   52:			deckCardsRemoved++;
+        -:   53:		}
+        -:   54:		else {
+        -:   55:			// bottom half of deck, last cards drawn
+       10:   56:			state.deck[currP][i] = copper;			
+       10:   57:			printf("Card %d		copper\n", i);
+        -:   58:		}
+        -:   59:	}
+        -:   60:
+        2:   61:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   62:    
+        -:   63:    // preconditions
+        2:   64:	printf("\nNumber of cards in hand to begin:\n");
+        2:   65:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        2:   66:	printf("Cards in deck to begin:\n");
+        2:   67:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        2:   68:	printf("Cards in hand:\n");
+        -:   69:    
+        -:   70:    // set handpos 0 to adventurer card
+        2:   71:    state.hand[currP][0] = 7;
+        -:   72:    
+        -:   73:    // print values of cards in hand prior to playing the card
+       12:   74:    for(i = 0; i < state.handCount[currP]; i++) {
+       10:   75:    	printf("Enum value of card: %d", state.hand[currP][i]);
+       10:   76:    	if(state.hand[currP][i] == 4) {
+        6:   77:    		printf("	Copper\n");
+        -:   78:    	}
+        -:   79:    	else {
+        4:   80:    		printf("\n");
+        -:   81:    	}
+        -:   82:    }
+        -:   83:	
+        2:   84:    cardEffect(adventurer, 1, 0, 0, &state, handpos, 0);
+        2:   85:    printf("\nRan playAdventurer\n\n");
+        -:   86:
+        -:   87:    // post test	
+        2:   88:    printf("Current cards in hand:\n");
+        2:   89:    asserttrue(state.handCount[currP], testState.handCount[currP] + treasureAdded - discarded);
+        2:   90:	printf("Current cards in deck:\n");
+        2:   91:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - deckCardsRemoved);
+        -:   92:
+        -:   93:	// print values of cards in hand after playing the card
+        2:   94:	printf("Cards in hand:\n");
+       12:   95:    for(i = 0; i < state.handCount[currP]; i++) {
+       10:   96:    	printf("Enum value of card: %d", state.hand[currP][i]);
+       10:   97:    	if(state.hand[currP][i] == 4) {
+        6:   98:    		printf("	Copper\n");
+        -:   99:    	}
+        -:  100:    	else {
+        4:  101:    		printf("\n");
+        -:  102:    	}
+        -:  103:    }
+        -:  104:    
+        2:  105:    printf("\nVictory card supplies:\n");
+        2:  106:    printf("Estates:\n");
+        2:  107:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        2:  108:    printf("Duchies:\n");
+        2:  109:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        2:  110:    printf("Provinces:\n");
+        2:  111:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:  112:    
+        -:  113:    
+        2:  114:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        2:  115:	printf("Test 2: test function with choice 1 negative value instead of 0\n\n");
+        -:  116: 
+        -:  117:    // initialize game with hand and deck amounts reset from any previous tests
+        2:  118:	initializeGame(numPlayer, k, seed, &state); 
+        -:  119:	
+        2:  120:	state.deckCount[currP] = 10;
+        -:  121:
+        -:  122:	// set deck order to control draws	
+        2:  123:	printf("Deck order:\n");
+       22:  124:	for(i = 0; i < 10; i++) {
+       20:  125:		if(i > 4) {
+        -:  126:			// top half of deck, first cards drawn
+       10:  127:			state.deck[currP][i] = estate;
+       10:  128:			printf("Card %d		estate\n", i);
+       10:  129:			deckCardsRemoved++;
+        -:  130:		}
+        -:  131:		else {
+        -:  132:			// bottom half of deck, last cards drawn
+       10:  133:			state.deck[currP][i] = copper;			
+       10:  134:			printf("Card %d		copper\n", i);
+        -:  135:		}
+        -:  136:	}
+        -:  137:
+        2:  138:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  139:    
+        -:  140:    // preconditions
+        2:  141:	printf("\nNumber of cards in hand to begin:\n");
+        2:  142:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        2:  143:	printf("Cards in deck to begin:\n");
+        2:  144:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        2:  145:	printf("Cards in hand:\n");
+        -:  146:    
+        -:  147:    // set handpos 0 to adventurer card
+        2:  148:    state.hand[currP][0] = 7;
+        -:  149:    
+        -:  150:    // print values of cards in hand prior to playing the card
+       12:  151:    for(i = 0; i < state.handCount[currP]; i++) {
+       10:  152:    	printf("Enum value of card: %d", state.hand[currP][i]);
+       10:  153:    	if(state.hand[currP][i] == 4) {
+        6:  154:    		printf("	Copper\n");
+        -:  155:    	}
+        -:  156:    	else {
+        4:  157:    		printf("\n");
+        -:  158:    	}
+        -:  159:    }
+        -:  160:	
+        2:  161:    cardEffect(adventurer, -1, 0, 0, &state, handpos, 0);
+        2:  162:    printf("\nRan playAdventurer\n\n");
+        -:  163:
+        -:  164:    // post test	
+        2:  165:    printf("Current cards in hand:\n");
+        2:  166:    asserttrue(state.handCount[currP], testState.handCount[currP] + treasureAdded - discarded);
+        2:  167:	printf("Current cards in deck:\n");
+        2:  168:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - deckCardsRemoved);
+        -:  169:
+        -:  170:	// print values of cards in hand after playing the card
+        2:  171:	printf("Cards in hand:\n");
+       12:  172:    for(i = 0; i < state.handCount[currP]; i++) {
+       10:  173:    	printf("Enum value of card: %d", state.hand[currP][i]);
+       10:  174:    	if(state.hand[currP][i] == 4) {
+        6:  175:    		printf("	Copper\n");
+        -:  176:    	}
+        -:  177:    	else {
+        4:  178:    		printf("\n");
+        -:  179:    	}
+        -:  180:    }	
+        -:  181:
+        2:  182:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        2:  183:	printf("Test 3: test function with choice 1 max int\n\n");
+        -:  184: 
+        -:  185:    // initialize game with hand and deck amounts reset from any previous tests
+        2:  186:	initializeGame(numPlayer, k, seed, &state); 
+        -:  187:	
+        2:  188:	state.deckCount[currP] = 10;
+        -:  189:
+        -:  190:	// set deck order to control draws	
+        2:  191:	printf("Deck order:\n");
+       22:  192:	for(i = 0; i < 10; i++) {
+       20:  193:		if(i > 4) {
+        -:  194:			// top half of deck, first cards drawn
+       10:  195:			state.deck[currP][i] = estate;
+       10:  196:			printf("Card %d		estate\n", i);
+       10:  197:			deckCardsRemoved++;
+        -:  198:		}
+        -:  199:		else {
+        -:  200:			// bottom half of deck, last cards drawn
+       10:  201:			state.deck[currP][i] = copper;			
+       10:  202:			printf("Card %d		copper\n", i);
+        -:  203:		}
+        -:  204:	}
+        -:  205:
+        2:  206:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  207:
+        -:  208:    
+        -:  209:    // preconditions
+        2:  210:	printf("\nNumber of cards in hand to begin:\n");
+        2:  211:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        2:  212:	printf("Cards in deck to begin:\n");
+        2:  213:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        2:  214:	printf("Cards in hand:\n");
+        -:  215:    
+        -:  216:    // set handpos 0 to adventurer card
+        2:  217:    state.hand[currP][0] = 7;
+        -:  218:    
+        -:  219:    // print values of cards in hand prior to playing the card
+       12:  220:    for(i = 0; i < state.handCount[currP]; i++) {
+       10:  221:    	printf("Enum value of card: %d", state.hand[currP][i]);
+       10:  222:    	if(state.hand[currP][i] == 4) {
+        6:  223:    		printf("	Copper\n");
+        -:  224:    	}
+        -:  225:    	else {
+        4:  226:    		printf("\n");
+        -:  227:    	}
+        -:  228:    }
+        -:  229:	
+        2:  230:    cardEffect(adventurer, 2147483647, 0, 0, &state, handpos, 0);
+        2:  231:    printf("\nRan playAdventurer\n\n");
+        -:  232:
+        -:  233:    // post test	
+        2:  234:    printf("Current cards in hand:\n");
+        2:  235:    asserttrue(state.handCount[currP], testState.handCount[currP] + treasureAdded - discarded);
+        2:  236:	printf("Current cards in deck:\n");
+        2:  237:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - deckCardsRemoved);
+        -:  238:
+        -:  239:	// print values of cards in hand after playing the card
+        2:  240:	printf("Cards in hand:\n");
+       12:  241:    for(i = 0; i < state.handCount[currP]; i++) {
+       10:  242:    	printf("Enum value of card: %d", state.hand[currP][i]);
+       10:  243:    	if(state.hand[currP][i] == 4) {
+        6:  244:    		printf("	Copper\n");
+        -:  245:    	}
+        -:  246:    	else {
+        4:  247:    		printf("\n");
+        -:  248:    	}
+        -:  249:    }	
+        -:  250:    
+        2:  251:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        2:  252:	printf("Test 4: test function with choice 1 smallest possible int\n\n");
+        -:  253:	
+        -:  254:     // initialize game with hand and deck amounts reset from any previous tests
+        2:  255:	initializeGame(numPlayer, k, seed, &state); 
+        -:  256:	
+        2:  257:	state.deckCount[currP] = 10;
+        -:  258:
+        -:  259:	// set deck order to control draws	
+        2:  260:	printf("Deck order:\n");
+       22:  261:	for(i = 0; i < 10; i++) {
+       20:  262:		if(i > 4) {
+        -:  263:			// top half of deck, first cards drawn
+       10:  264:			state.deck[currP][i] = estate;
+       10:  265:			printf("Card %d		estate\n", i);
+       10:  266:			deckCardsRemoved++;
+        -:  267:		}
+        -:  268:		else {
+        -:  269:			// bottom half of deck, last cards drawn
+       10:  270:			state.deck[currP][i] = copper;			
+       10:  271:			printf("Card %d		copper\n", i);
+        -:  272:		}
+        -:  273:	}
+        -:  274:
+        2:  275:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  276:    
+        -:  277:    // preconditions
+        2:  278:	printf("\nNumber of cards in hand to begin:\n");
+        2:  279:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        2:  280:	printf("Cards in deck to begin:\n");
+        2:  281:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        2:  282:	printf("Cards in hand:\n");
+        -:  283:    
+        -:  284:    // set handpos 0 to adventurer card
+        2:  285:    state.hand[currP][0] = 7;
+        -:  286:    
+        -:  287:    // print values of cards in hand prior to playing the card
+       12:  288:    for(i = 0; i < state.handCount[currP]; i++) {
+       10:  289:    	printf("Enum value of card: %d", state.hand[currP][i]);
+       10:  290:    	if(state.hand[currP][i] == 4) {
+        6:  291:    		printf("	Copper\n");
+        -:  292:    	}
+        -:  293:    	else {
+        4:  294:    		printf("\n");
+        -:  295:    	}
+        -:  296:    }
+        -:  297:	
+        2:  298:    cardEffect(adventurer, -2147483648, 0, 0, &state, handpos, 0);
+        2:  299:    printf("\nRan playAdventurer\n\n");
+        -:  300:
+        -:  301:    // post test	
+        2:  302:    printf("Current cards in hand:\n");
+        2:  303:    asserttrue(state.handCount[currP], testState.handCount[currP] + treasureAdded - discarded);
+        2:  304:	printf("Current cards in deck:\n");
+        2:  305:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - deckCardsRemoved);
+        -:  306:
+        -:  307:	// print values of cards in hand after playing the card
+        2:  308:	printf("Cards in hand:\n");
+       12:  309:    for(i = 0; i < state.handCount[currP]; i++) {
+       10:  310:    	printf("Enum value of card: %d", state.hand[currP][i]);
+       10:  311:    	if(state.hand[currP][i] == 4) {
+        6:  312:    		printf("	Copper\n");
+        -:  313:    	}
+        -:  314:    	else {
+        4:  315:    		printf("\n");
+        -:  316:    	}
+        -:  317:    }	
+        2:  318:	return 0;
+        -:  319:}
+        -:    0:Source:cardtest3.c
+        -:    0:Graph:cardtest3.gcno
+        -:    0:Data:cardtest3.gcda
+        -:    0:Runs:5
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include <string.h>
+        -:    4:#include <stdio.h>
+        -:    5:#include <assert.h>
+        -:    6:#include "rngs.h"
+        -:    7:
+        -:    8:#define TESTCARD "great_hall"
+        -:    9:
+      105:   10:int asserttrue(int expVal, int verifyVal) {
+      105:   11:        printf("actual: %d  expected: %d\n", expVal, verifyVal);
+        -:   12:        
+      105:   13:        if(expVal == verifyVal) {
+       95:   14:            printf("Results match.\n\n");
+       95:   15:            return 0;
+        -:   16:        }
+        -:   17:        else {
+       10:   18:            printf("Results do NOT match.\n\n");
+       10:   19:            return 1;
+        -:   20:        }
+        -:   21:}
+        -:   22:
+        5:   23:int main() {
+        5:   24:    int seed = 1000;
+        5:   25:    int numPlayer = 2;
+        5:   26:    int currP = 0;
+        5:   27:    int k[10] = {adventurer, council_room, feast, gardens, mine
+        -:   28:               , remodel, smithy, village, cutpurse, great_hall};
+        -:   29:    struct gameState state, testState;
+        -:   30:    
+        5:   31:    int discarded = 1;
+        5:   32:    int handpos = 0;    
+        -:   33:
+        5:   34:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        5:   35:	printf("Test 1: +1 card to hand, +1 actions in state\n\n");
+        -:   36:	
+        -:   37:    // initialize game with hand and deck amounts reset from any previous tests
+        5:   38:	initializeGame(numPlayer, k, seed, &state); 
+        5:   39:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   40:    
+        -:   41:    // preconditions
+        5:   42:	printf("Cards in hand to begin:\n");
+        5:   43:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        5:   44:	printf("Cards in deck to begin:\n");
+        5:   45:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:   46:	
+        5:   47:	printf("Num Actions before play:\n");
+        5:   48:	asserttrue(state.numActions, testState.numActions);
+        -:   49:
+        5:   50:	int drawnCards = 1;
+        5:   51:	int numActionIncrease = 1;
+        5:   52:    cardEffect(great_hall, 0, 0, 0, &state, handpos, 0);
+        5:   53:    printf("Ran great hall\n\n");
+        -:   54:
+        -:   55:    // post test	
+        5:   56:    printf("Current cards in hand:\n");
+        5:   57:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        5:   58:	printf("Current cards in deck:\n");
+        5:   59:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:   60:	
+        5:   61:	printf("Num Actions after play:\n");
+        5:   62:	asserttrue(state.numActions, testState.numActions + numActionIncrease);
+        -:   63:	
+        5:   64:	printf("Victory card supplies:\n");
+        5:   65:    printf("Estates:\n");
+        5:   66:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        5:   67:    printf("Duchies:\n");
+        5:   68:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        5:   69:    printf("Provinces:\n");
+        5:   70:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:   71:
+        -:   72:
+        5:   73:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        5:   74:	printf("Test 2: +1 card to hand, +1 actions in state when deck is -1\n\n");
+        -:   75:	
+        -:   76:    // initialize game with hand and deck amounts reset from any previous tests
+        5:   77:	initializeGame(numPlayer, k, seed, &state); 
+        5:   78:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   79:    
+        5:   80:	state.deckCount[currP] = -1;
+        5:   81:	testState.deckCount[currP] = -1;
+        -:   82:	
+        -:   83:    // preconditions
+        5:   84:	printf("Cards in hand to begin:\n");
+        5:   85:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        5:   86:	printf("Cards in deck to begin:\n");
+        5:   87:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:   88:	
+        5:   89:	printf("Num Actions before play:\n");
+        5:   90:	asserttrue(state.numActions, testState.numActions);
+        -:   91:
+        5:   92:    drawnCards = 0;
+        5:   93:    cardEffect(great_hall, 0, 0, 0, &state, handpos, 0);
+        5:   94:    printf("Ran great hall\n\n");
+        -:   95:
+        -:   96:    // post test	
+        5:   97:    printf("Current cards in hand:\n");
+        5:   98:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        5:   99:	printf("Current cards in deck:\n");
+        5:  100:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:  101:	
+        5:  102:	printf("Num Actions after play:\n");
+        5:  103:	asserttrue(state.numActions, testState.numActions + numActionIncrease);
+        -:  104:
+        -:  105:
+        5:  106:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        5:  107:	printf("Test 3: +1 card to hand, +1 actions in state when deck is lowest possible int\n\n");
+        -:  108:	
+        -:  109:    // initialize game with hand and deck amounts reset from any previous tests
+        5:  110:	initializeGame(numPlayer, k, seed, &state); 
+        5:  111:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  112:    
+        5:  113:	state.deckCount[currP] = -2147483648;
+        5:  114:	testState.deckCount[currP] = -2147483648;
+        -:  115:	
+        -:  116:    // preconditions
+        5:  117:	printf("Cards in hand to begin:\n");
+        5:  118:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        5:  119:	printf("Cards in deck to begin:\n");
+        5:  120:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  121:	
+        5:  122:	printf("Num Actions before play:\n");
+        5:  123:	asserttrue(state.numActions, testState.numActions);
+        -:  124:
+        5:  125:    cardEffect(great_hall, 0, 0, 0, &state, handpos, 0);
+        5:  126:    printf("Ran great hall\n\n");
+        -:  127:
+        -:  128:    // post test	
+        5:  129:    printf("Current cards in hand:\n");
+        5:  130:    asserttrue(state.handCount[currP], testState.handCount[currP] + drawnCards - discarded);
+        5:  131:	printf("Current cards in deck:\n");
+        5:  132:	asserttrue(state.deckCount[currP], testState.deckCount[currP] - drawnCards);
+        -:  133:	
+        5:  134:	printf("Num Actions after play:\n");
+        5:  135:	asserttrue(state.numActions, testState.numActions + numActionIncrease);
+        -:  136:
+        5:  137:	return 0;
+        -:  138:}
+        -:    0:Source:cardtest4.c
+        -:    0:Graph:cardtest4.gcno
+        -:    0:Data:cardtest4.gcda
+        -:    0:Runs:4
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include <string.h>
+        -:    4:#include <stdio.h>
+        -:    5:#include <assert.h>
+        -:    6:#include "rngs.h"
+        -:    7:
+        -:    8:#define TESTCARD "sea_hag"
+        -:    9:
+       76:   10:int asserttrue(int expVal, int verifyVal) {
+       76:   11:        printf("actual: %d  expected: %d\n", expVal, verifyVal);
+        -:   12:        
+       76:   13:        if(expVal == verifyVal) {
+       60:   14:            printf("Results match.\n\n");
+       60:   15:            return 0;
+        -:   16:        }
+        -:   17:        else {
+       16:   18:            printf("Results do NOT match.\n\n");
+       16:   19:            return 1;
+        -:   20:        }
+        -:   21:}
+        -:   22:
+        4:   23:int main() {
+        4:   24:    int seed = 1000;
+        4:   25:    int numPlayer = 2;
+        4:   26:    int currP = 0;
+        4:   27:    int otherP = 1;
+        4:   28:    int k[10] = {adventurer, council_room, feast, gardens, mine
+        -:   29:               , remodel, smithy, village, cutpurse, sea_hag};
+        -:   30:    struct gameState state, testState;
+        -:   31:    
+        -:   32:    int i;
+        4:   33:    int discarded = 1;
+        4:   34:    int handpos = 0;    
+        -:   35:
+        4:   36:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:   37:	printf("Test 1: discard top card from opponent's deck, replace with a curse, discard sea hag\n\n");
+        -:   38:	
+        -:   39:    // initialize game with hand and deck amounts reset from any previous tests
+        4:   40:	initializeGame(numPlayer, k, seed, &state); 
+        -:   41:	
+        4:   42:	state.deckCount[otherP] = 10;
+        4:   43:    printf("Opponent's deck size: %d\n", state.deckCount[otherP]);
+        -:   44:    
+        -:   45:    //set opposing player's deck order so card on top of deck is controlled 
+        4:   46:	printf("Opponent's deck order:\n");
+       44:   47:	for(i = 0; i < state.deckCount[otherP]; i++) {
+       40:   48:		if(i == state.deckCount[otherP] - 1) {
+        -:   49:			// card on top of deck
+        4:   50:			state.deck[otherP][i] = baron;
+        4:   51:			printf("Card %d		baron, enum 15\n", i);
+        -:   52:		}
+        -:   53:		else {
+        -:   54:			// rest of deck
+       36:   55:			state.deck[otherP][i] = copper;			
+       36:   56:			printf("Card %d		copper\n", i);
+        -:   57:		}
+        -:   58:	}
+        -:   59:	
+        4:   60:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:   61:    
+        -:   62:
+        -:   63:    // preconditions
+        4:   64:	printf("\nCards in player's hand to begin:\n");
+        4:   65:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        4:   66:	printf("Cards in player's deck to begin:\n");
+        4:   67:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:   68:	
+        4:   69:    cardEffect(sea_hag, 0, 0, 0, &state, handpos, 0);
+        4:   70:    printf("Ran sea hag\n\n");
+        -:   71:
+        -:   72:    // post test	
+        4:   73:    printf("Current cards in hand:\n");
+        4:   74:    asserttrue(state.handCount[currP], testState.handCount[currP] - discarded);
+        4:   75:	printf("Current cards in deck:\n");
+        4:   76:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:   77:
+        -:   78:
+        4:   79:    printf("Opponent's deck size: %d\n", state.deckCount[otherP]);
+        4:   80:	printf("Opponent's deck order:\n");
+       32:   81:	for(i = 0; i < state.deckCount[otherP]; i++) {
+       28:   82:		if(state.deck[otherP][i] == 0) {
+    #####:   83:			printf("Card %d		Curse, enum 0\n", i);
+        -:   84:		}
+       28:   85:		else if(state.deck[otherP][i] == 15) {;			
+    #####:   86:			printf("Card %d		baron\n", i);		    
+        -:   87:		}
+       28:   88:		else if(state.deck[otherP][i] == 4) {;			
+       28:   89:			printf("Card %d		copper\n", i);		    
+        -:   90:		}
+        -:   91:		else {
+    #####:   92:			printf("Card %d		other\n", i);
+        -:   93:		}
+        -:   94:	}
+        -:   95:	
+        4:   96:    printf("\nVictory card supplies:\n");
+        4:   97:    printf("Estates:\n");
+        4:   98:    asserttrue(state.supplyCount[estate], testState.supplyCount[estate]);
+        4:   99:    printf("Duchies:\n");
+        4:  100:    asserttrue(state.supplyCount[duchy], testState.supplyCount[duchy]);
+        4:  101:    printf("Provinces:\n");
+        4:  102:    asserttrue(state.supplyCount[province], testState.supplyCount[province]);
+        -:  103:    
+        -:  104:
+        4:  105:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:  106:	printf("Test 2: test sea hag with max opponent's deck size\n\n");
+        -:  107:	
+        -:  108:    // initialize game with hand and deck amounts reset from any previous tests
+        4:  109:	initializeGame(numPlayer, k, seed, &state); 
+        -:  110:	
+        4:  111:	state.deckCount[otherP] = MAX_DECK;
+        -:  112:
+        4:  113:    printf("Opponent's deck size: %d\n", state.deckCount[otherP]);
+        -:  114:    //set opposing player's deck order so card on top of deck is controlled 	
+        4:  115:	printf("Opponent's deck order:\n");
+     2004:  116:	for(i = 0; i < state.deckCount[otherP]; i++) {
+     2000:  117:		if(i == state.deckCount[otherP] - 2) {
+        -:  118:			// card on top of deck
+        4:  119:			state.deck[otherP][i] = baron;
+        4:  120:			printf("Card %d		baron, enum 15\n", i);
+        -:  121:		}
+        -:  122:		else {
+        -:  123:			// rest of deck
+     1996:  124:			state.deck[otherP][i] = copper;			
+        -:  125:		}
+        -:  126:	}
+        4:  127:	printf("Cards 0 through %d are all coppers.\n", state.deckCount[otherP]-1);
+        -:  128:	
+        4:  129:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  130:    
+        -:  131:    // preconditions
+        4:  132:	printf("\nCards in player's hand to begin:\n");
+        4:  133:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        4:  134:	printf("Cards in player's deck to begin:\n");
+        4:  135:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  136:	
+        4:  137:    cardEffect(sea_hag, 0, 0, 0, &state, handpos, 0);
+        4:  138:    printf("Ran sea hag\n\n");
+        -:  139:
+        -:  140:    // post test	
+        4:  141:    printf("Current cards in hand:\n");
+        4:  142:    asserttrue(state.handCount[currP], testState.handCount[currP] - discarded);
+        4:  143:	printf("Current cards in deck:\n");
+        4:  144:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  145:
+        -:  146:
+        4:  147:    printf("Opponent's deck size: %d\n", state.deckCount[otherP]);
+        4:  148:	printf("Opponent's deck order (excluding 400+ coppers):\n");
+     1992:  149:	for(i = 0; i < state.deckCount[otherP]; i++) {
+     1988:  150:		if(state.deck[otherP][i] == 0) {
+    #####:  151:			printf("Card %d		Curse, enum 0\n", i);
+        -:  152:		}
+     1988:  153:		else if(state.deck[otherP][i] == 15) {;			
+    #####:  154:			printf("Card %d		baron\n", i);		    
+        -:  155:		}
+     1988:  156:		else if(state.deck[otherP][i] != 4) {
+    #####:  157:			printf("Card %d		other\n", i);
+        -:  158:		}
+        -:  159:	}
+        -:  160:
+        -:  161:
+        4:  162:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:  163:	printf("Test 3: opponent's deck size 0\n\n");
+        -:  164:	
+        -:  165:    // initialize game with hand and deck amounts reset from any previous tests
+        4:  166:	initializeGame(numPlayer, k, seed, &state); 
+        -:  167:	
+        4:  168:	state.deckCount[otherP] = 0;
+        4:  169:    printf("Opponent's deck size: %d\n", state.deckCount[otherP]);
+        -:  170:    
+        -:  171:    //set opposing player's deck order so card on top of deck is controlled 	
+        4:  172:	printf("Opponent's deck order:\n");
+        4:  173:	for(i = 0; i < state.deckCount[otherP]; i++) {
+    #####:  174:		if(i == state.deckCount[otherP] - 1) {
+        -:  175:			// card on top of deck
+    #####:  176:			state.deck[otherP][i] = baron;
+    #####:  177:			printf("Card %d		baron, enum 15\n", i);
+        -:  178:		}
+        -:  179:		else {
+        -:  180:			// rest of deck
+    #####:  181:			state.deck[otherP][i] = copper;			
+    #####:  182:			printf("Card %d		copper\n", i);
+        -:  183:		}
+        -:  184:	}
+        -:  185:	
+        4:  186:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  187:    
+        -:  188:    // preconditions
+        4:  189:	printf("\nCards in player's hand to begin:\n");
+        4:  190:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        4:  191:	printf("Cards in player's deck to begin:\n");
+        4:  192:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  193:	
+        4:  194:    cardEffect(sea_hag, 0, 0, 0, &state, handpos, 0);
+        4:  195:    printf("Ran sea hag\n\n");
+        -:  196:
+        -:  197:    // post test	
+        4:  198:    printf("Current cards in hand:\n");
+        4:  199:    asserttrue(state.handCount[currP], testState.handCount[currP] - discarded);
+        4:  200:	printf("Current cards in deck:\n");
+        4:  201:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  202:
+        -:  203:
+        4:  204:    printf("Opponent's deck size: %d\n", state.deckCount[otherP]);
+        4:  205:	printf("Opponent's deck order:\n");
+        4:  206:	for(i = 0; i < state.deckCount[otherP]; i++) {
+    #####:  207:		if(state.deck[otherP][i] == 0) {
+    #####:  208:			printf("Card %d		Curse, enum 0\n", i);
+        -:  209:		}
+    #####:  210:		else if(state.deck[otherP][i] == 15) {;			
+    #####:  211:			printf("Card %d		baron\n", i);		    
+        -:  212:		}
+    #####:  213:		else if(state.deck[otherP][i] == 4) {;			
+    #####:  214:			printf("Card %d		copper\n", i);		    
+        -:  215:		}
+        -:  216:		else {
+    #####:  217:			printf("Card %d		other\n", i);
+        -:  218:		}
+        -:  219:	}
+        -:  220:
+        4:  221:	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
+        4:  222:	printf("Test 4: opponent's deck size -1\n\n");
+        -:  223:	
+        -:  224:    // initialize game with hand and deck amounts reset from any previous tests
+        4:  225:	initializeGame(numPlayer, k, seed, &state); 
+        -:  226:	
+        4:  227:	state.deckCount[otherP] = -1;
+        4:  228:    printf("Opponent's deck size: %d\n", state.deckCount[otherP]);
+        -:  229:    
+        -:  230:    //set opposing player's deck order so card on top of deck is controlled 	
+        4:  231:	printf("Opponent's deck order:\n");
+        4:  232:	for(i = 0; i < state.deckCount[otherP]; i++) {
+    #####:  233:		if(i == state.deckCount[otherP] - 1) {
+        -:  234:			// card on top of deck
+    #####:  235:			state.deck[otherP][i] = baron;
+    #####:  236:			printf("Card %d		baron, enum 15\n", i);
+        -:  237:		}
+        -:  238:		else {
+        -:  239:			// rest of deck
+    #####:  240:			state.deck[otherP][i] = copper;			
+    #####:  241:			printf("Card %d		copper\n", i);
+        -:  242:		}
+        -:  243:	}
+        -:  244:	
+        4:  245:    memcpy(&testState, &state, sizeof(struct gameState)); 
+        -:  246:    
+        -:  247:    // preconditions
+        4:  248:	printf("\nCards in player's hand to begin:\n");
+        4:  249:	asserttrue(state.handCount[currP], testState.handCount[currP]);
+        4:  250:	printf("Cards in player's deck to begin:\n");
+        4:  251:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  252:	
+        4:  253:    cardEffect(sea_hag, 0, 0, 0, &state, handpos, 0);
+        4:  254:    printf("Ran sea hag\n\n");
+        -:  255:
+        -:  256:    // post test	
+        4:  257:    printf("Current cards in hand:\n");
+        4:  258:    asserttrue(state.handCount[currP], testState.handCount[currP] - discarded);
+        4:  259:	printf("Current cards in deck:\n");
+        4:  260:	asserttrue(state.deckCount[currP], testState.deckCount[currP]);
+        -:  261:
+        -:  262:
+        4:  263:    printf("Opponent's deck size: %d\n", state.deckCount[otherP]);
+        4:  264:	printf("Opponent's deck order:\n");
+        4:  265:	for(i = 0; i < state.deckCount[otherP]; i++) {
+    #####:  266:		if(state.deck[otherP][i] == 0) {
+    #####:  267:			printf("Card %d		Curse, enum 0\n", i);
+        -:  268:		}
+    #####:  269:		else if(state.deck[otherP][i] == 15) {;			
+    #####:  270:			printf("Card %d		baron\n", i);		    
+        -:  271:		}
+    #####:  272:		else if(state.deck[otherP][i] == 4) {;			
+    #####:  273:			printf("Card %d		copper\n", i);		    
+        -:  274:		}
+        -:  275:		else {
+    #####:  276:			printf("Card %d		other\n", i);
+        -:  277:		}
+        -:  278:	}
+        -:  279:	
+        4:  280:	return 0;
+        -:  281:}

@@ -655,7 +655,7 @@ int playSmithy(int currentPlayer, struct gameState *state, int handPos) {
   return 0;  
 }
 
-int playAdventurer(int currentPlayer, struct gameState *state, int handPos, int drawntreasure, int* temphand, int cardDrawn, int z) {
+int playAdventurer(int currentPlayer, struct gameState *state, int handPos, int drawntreasure, int* temphand, int z) {
   while(drawntreasure>2){
 	  if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
 	  shuffle(currentPlayer, state);
@@ -769,7 +769,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     {
     case adventurer:
       cardDrawn=0;
-      playAdventurer(currentPlayer, state, handPos, drawntreasure, temphand, cardDrawn, z);
+      playAdventurer(currentPlayer, state, handPos, drawntreasure, temphand, z);
       return 0;
 			
     case council_room:
@@ -1203,7 +1203,8 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     case sea_hag:
       for (i = 0; i < state->numPlayers; i++){
 	if (i != currentPlayer){
-	  state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];			    state->deckCount[i]--;
+	  state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];			    
+	  state->deckCount[i]--;
 	  state->discardCount[i]++;
 	  state->deck[i][state->deckCount[i]--] = curse;//Top card now a curse
 	}
