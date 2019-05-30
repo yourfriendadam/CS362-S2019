@@ -1,0 +1,462 @@
+----------------- Testing Card: village ----------------
+Test 1: +1 card to hand, +2 actions in state
+
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Num Actions before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Current cards in hand:
+actual: 5  expected: 5
+Results match.
+
+Current cards in deck:
+actual: 4  expected: 4
+Results match.
+
+Num Actions after play:
+actual: 2  expected: 3
+Results do NOT match.
+
+Cards in opponent's hand:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck:
+actual: 10  expected: 10
+Results match.
+
+Victory card supplies:
+Estates:
+actual: 6  expected: 8
+Results do NOT match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: village ----------------
+Test 2: +1 card to hand, +2 actions in state when deck is -1
+
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: -1  expected: -1
+Results match.
+
+Num Actions before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Current cards in hand:
+actual: 4  expected: 4
+Results match.
+
+Current cards in deck:
+actual: 0  expected: -1
+Results do NOT match.
+
+Num Actions after play:
+actual: 2  expected: 3
+Results do NOT match.
+
+Cards in opponent's hand:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck:
+actual: 10  expected: 10
+Results match.
+
+Victory card supplies:
+Estates:
+actual: 6  expected: 8
+Results do NOT match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: village ----------------
+Test 3: +1 card to hand, +2 actions in state when deck is lowest possible int
+
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: -2147483648  expected: -2147483648
+Results match.
+
+Num Actions before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Current cards in hand:
+actual: 4  expected: 4
+Results match.
+
+Current cards in deck:
+actual: 0  expected: -2147483648
+Results do NOT match.
+
+Num Actions after play:
+actual: 2  expected: 3
+Results do NOT match.
+
+Cards in opponent's hand:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck:
+actual: 10  expected: 10
+Results match.
+
+Victory card supplies:
+Estates:
+actual: 6  expected: 8
+Results do NOT match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: council_room ----------------
+Test 1: +4 cards to hand, +1 buy in state, +1 card to other players' hand, -1 to their deck
+
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Num Buys before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Current cards in hand:
+actual: 8  expected: 8
+Results match.
+
+Current cards in deck:
+actual: 1  expected: 1
+Results match.
+
+Num Buys before play:
+actual: 2  expected: 2
+Results match.
+
+Cards in opponent's hand:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's deck:
+actual: 9  expected: 9
+Results match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: council_room ----------------
+Test 2: try other valid player value
+
+Cards in hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in deck to begin:
+actual: 10  expected: 10
+Results match.
+
+Num Buys before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Current cards in hand:
+actual: 1  expected: 3
+Results do NOT match.
+
+Current cards in deck:
+actual: 9  expected: 6
+Results do NOT match.
+
+Num Buys before play:
+actual: 2  expected: 2
+Results match.
+
+Cards in opponent's hand:
+actual: 8  expected: 6
+Results do NOT match.
+
+Cards in opponent's deck:
+actual: 1  expected: 4
+Results do NOT match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: council_room ----------------
+Test 3: set currentPlayer to one beyond valid (== numPlayers)
+
+Cards in hand to begin:
+actual: 0  expected: 0
+Results match.
+
+Cards in deck to begin:
+actual: 0  expected: 0
+Results match.
+
+Num Buys before play:
+actual: 1  expected: 1
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Cards in opponent's deck to begin:
+actual: 5  expected: 5
+Results match.
+
+Current cards in hand:
+actual: 0  expected: 3
+Results do NOT match.
+
+Current cards in deck:
+actual: 0  expected: -4
+Results do NOT match.
+
+Num Buys before play:
+actual: 2  expected: 2
+Results match.
+
+Cards in opponent's hand:
+actual: 8  expected: 6
+Results do NOT match.
+
+Cards in opponent's deck:
+actual: 1  expected: 4
+Results do NOT match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: cutpurse ----------------
+Test 1: current player +2 coins, other player discards a copper
+
+Coins to begin:
+actual: 4  expected: 4
+Results match.
+
+Cards in opponent's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Enum value of card: 1
+Enum value of card: 1
+Enum value of card: 4	Copper
+Enum value of card: 1
+Enum value of card: 1
+Coins after cutpurse:
+actual: 6  expected: 6
+Results match.
+
+Cards in opponent's hand:
+actual: 4  expected: 4
+Results match.
+
+Victory card supplies:
+Estates:
+actual: 8  expected: 8
+Results match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+----------------- Testing Card: cutpurse ----------------
+Test 2: other player has full hand of coppers, discards only one copper
+
+Cards in opponent's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+Enum value of card: 4	Copper
+Cards in opponent's hand:
+actual: 4  expected: 4
+Results match.
+
+----------------- Testing Card: cutpurse ----------------
+Test 3: other player has no coppers, only shows hand- no discarded copper
+
+Cards in opponent's hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Enum value of card: 1
+Enum value of card: 1
+Enum value of card: 1
+Enum value of card: 1
+Enum value of card: 1
+Cards in opponent's hand:
+actual: 5  expected: 5
+Results match.
+
+----------------- Testing Card: smithy ----------------
+Test 1: check large valid handpos
+
+Handpos is: 4
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran playSmithy
+
+Current cards in hand:
+actual: 8  expected: 7
+Results do NOT match.
+
+Victory card supplies:
+Estates:
+actual: 6  expected: 8
+Results do NOT match.
+
+Duchies:
+actual: 8  expected: 8
+Results match.
+
+Provinces:
+actual: 8  expected: 8
+Results match.
+
+
+----------------- Testing Card: smithy ----------------
+Test 2: check large invalid handpos - handpos greater than handsize
+
+Handpos is: 10
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran playSmithy
+
+Current cards in hand:
+actual: 8  expected: 7
+Results do NOT match.
+
+
+----------------- Testing Card: smithy ----------------
+Test 3: negative value for handpos
+
+Handpos is: -1
+Cards in hand to begin:
+actual: 5  expected: 5
+Results match.
+
+Ran playSmithy
+
+Current cards in hand:
+actual: 8  expected: 4
+Results do NOT match.
+
